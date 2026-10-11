@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore movie details, ratings, cast, and more with Movie Explorer.">
+    <title>Movie Details | Movie Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/movie.js" type="module"></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a href="index.html" class="brand">
+                <span class="brand-icon">M</span>
+                <span>Movie<span class="brand-accent">Explorer</span></span>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Discover</a>
+                <a href="index.html#movies" class="nav-link">Movies</a>
+            </div>
+
+            <a href="index.html" class="header-cta">
+                <span>←</span> Back to movies
+            </a>
+        </nav>
+    </header>
+
+    <main class="container details-page">
+        <a href="index.html" class="back-link">← Back to discovery</a>
+
+        <section class="movie-hero" id="movie-details" aria-labelledby="movie-title">
+            <div class="details-poster-wrapper">
+                <img
+                    class="details-poster"
+                    id="movie-poster"
+                    src="https://placehold.co/500x750/202127/f5f3ef?text=Movie+Poster"
+                    alt="Movie poster"
+                >
+            </div>
+
+            <div class="details-content">
+                <span class="section-kicker">MOVIE DETAILS</span>
+
+                <h1 id="movie-title">Movie title</h1>
+
+                <div class="details-meta" id="movie-meta">
+                    <span id="movie-year">Release year</span>
+                    <span class="meta-separator">•</span>
+                    <span id="movie-runtime">Runtime</span>
+                    <span class="meta-separator">•</span>
+                    <span id="movie-rating">Rating</span>
+                </div>
+
+                <div class="genre-list" id="movie-genres">
+                    <span class="genre-tag">Genres</span>
+                </div>
+
+                <div class="overview-section">
+                    <h2>Overview</h2>
+                    <p id="movie-overview">
+                        The movie synopsis will appear here once the movie data loads.
+                    </p>
+                </div>
+
+                <div class="details-actions">
+                    <a href="index.html" class="primary-button">
+                        Explore more movies <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="additional-details" aria-labelledby="additional-heading">
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">BEHIND THE FILM</span>
+                    <h2 id="additional-heading">More about the movie<span class="heading-period">.</span></h2>
+                </div>
+            </div>
+
+            <div class="details-grid">
+                <article class="detail-panel">
+                    <h3>Director</h3>
+                    <p id="movie-director">Loading information...</p>
+                </article>
+
+                <article class="detail-panel">
+                    <h3>Cast</h3>
+                    <p id="movie-cast">Loading information...</p>
+                </article>
+
+                <article class="detail-panel">
+                    <h3>Production companies</h3>
+                    <p id="movie-companies">Loading information...</p>
+                </article>
+
+                <article class="detail-panel">
+                    <h3>Release date</h3>
+                    <p id="movie-release-date">Loading information...</p>
+                </article>
+
+                <article class="detail-panel">
+                    <h3>Vote count</h3>
+                    <p id="movie-vote-count">Loading information...</p>
+                </article>
+
+                <article class="detail-panel">
+                    <h3>Original language</h3>
+                    <p id="movie-language">Loading information...</p>
+                </article>
+            </div>
+        </section>
+
+        <div class="page-message" id="page-message" role="status" aria-live="polite" hidden></div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <a href="index.html" class="brand footer-brand">
+                <span class="brand-icon">M</span>
+                <span>Movie<span class="brand-accent">Explorer</span></span>
+            </a>
+
+            <p>Made for people who love a good story.</p>
+
+            <span class="copyright">© 2026 Movie Explorer</span>
+        </div>
+
+        <div class="container attribution">
+            Movie data and images are provided by TMDB. This project is not endorsed or certified by TMDB.
+        </div>
+    </footer>
+</body>
+</html>

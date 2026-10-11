@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover movies, explore cinematic worlds, and find your next favorite film.">
+    <title>Movie Explorer | Discover Your Next Favorite</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/home.js" type="module"></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+            <a href="index.html" class="brand">
+                <span class="brand-icon">M</span>
+                <span>Movie<span class="brand-accent">Explorer</span></span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Discover</a>
+                <a href="#movies" class="nav-link">Movies</a>
+            </div>
+
+            <a href="#movies" class="header-cta">
+                Explore films <span>↗</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero container" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    YOUR NEXT MOVIE STARTS HERE
+                </span>
+
+                <h1>Every movie has<br>a story. <span>Find yours.</span></h1>
+
+                <p class="hero-description">
+                    Explore unforgettable stories, discover hidden gems,
+                    and find the perfect movie for your next movie night.
+                </p>
+
+                <a href="#movies" class="primary-button">
+                    Explore movies <span>↓</span>
+                </a>
+
+                <div class="hero-note">
+                    <span class="note-line"></span>
+                    <span>A world of cinema, all in one place.</span>
+                </div>
+            </div>
+
+            <div class="hero-art" aria-hidden="true">
+                <div class="art-glow"></div>
+                <div class="art-ring art-ring-one"></div>
+                <div class="art-ring art-ring-two"></div>
+                <div class="art-orb"></div>
+
+                <div class="art-panel">
+                    <span class="art-panel-label">THE ART OF CINEMA</span>
+                    <div class="art-panel-symbol">M<span>.</span></div>
+                    <span class="art-panel-caption">Stories worth discovering.</span>
+                </div>
+
+                <span class="art-decoration art-decoration-one">01</span>
+                <span class="art-decoration art-decoration-two">FRAME / 24</span>
+            </div>
+        </section>
+
+        <section class="movies-section container" id="movies">
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">THE COLLECTION</span>
+                    <h2>Discover movies<span class="heading-period">.</span></h2>
+                    <p class="section-description">
+                        Your next favorite film is waiting.
+                    </p>
+                </div>
+
+                <span class="collection-label">
+                    <span class="status-dot"></span>
+                    Explore the collection
+                </span>
+            </div>
+
+            <form class="search-form" id="search-form" role="search">
+                <span class="search-icon" aria-hidden="true">⌕</span>
+
+                <label class="visually-hidden" for="search-input">
+                    Search movies by title
+                </label>
+
+                <input
+                    type="search"
+                    id="search-input"
+                    name="query"
+                    placeholder="Search by movie title..."
+                    autocomplete="off"
+                >
+
+                <button type="submit" class="search-button">
+                    Search <span>→</span>
+                </button>
+            </form>
+
+            <div class="results-heading">
+                <h3 id="results-title">Popular picks</h3>
+                <span class="results-caption">
+                    Handpicked for your next watch
+                </span>
+            </div>
+
+            <div class="movie-grid" id="movie-grid" aria-live="polite">
+                <article class="movie-card">
+                    <a href="movie.html?id=27205" class="poster-link" aria-label="View Inception details">
+                        <img
+                            class="movie-poster"
+                            src="https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg"
+                            alt="Inception movie poster"
+                            loading="lazy"
+                        >
+                        <span class="rating-badge">★ 8.4</span>
+                    </a>
+                    <div class="movie-info">
+                        <div class="movie-title-row">
+                            <h4>Inception</h4>
+                            <span class="movie-year">2010</span>
+                        </div>
+                        <p class="movie-meta">Sci-Fi · Thriller</p>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <a href="movie.html?id=157336" class="poster-link" aria-label="View Interstellar details">
+                        <img
+                            class="movie-poster"
+                            src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MXL6K3kU.jpg"
+                            alt="Interstellar movie poster"
+                            loading="lazy"
+                        >
+                        <span class="rating-badge">★ 8.7</span>
+                    </a>
+                    <div class="movie-info">
+                        <div class="movie-title-row">
+                            <h4>Interstellar</h4>
+                            <span class="movie-year">2014</span>
+                        </div>
+                        <p class="movie-meta">Sci-Fi · Adventure</p>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <a href="movie.html?id=693134" class="poster-link" aria-label="View Dune: Part Two details">
+                        <img
+                            class="movie-poster"
+                            src="https://image.tmdb.org/t/p/w500/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg"
+                            alt="Dune: Part Two movie poster"
+                            loading="lazy"
+                        >
+                        <span class="rating-badge">★ 8.2</span>
+                    </a>
+                    <div class="movie-info">
+                        <div class="movie-title-row">
+                            <h4>Dune: Part Two</h4>
+                            <span class="movie-year">2024</span>
+                        </div>
+                        <p class="movie-meta">Sci-Fi · Adventure</p>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <a href="movie.html?id=872585" class="poster-link" aria-label="View Oppenheimer details">
+                        <img
+                            class="movie-poster"
+                            src="https://image.tmdb.org/t/p/w500/ptpr0kGAckfQkJeJIt8st5dglvd.jpg"
+                            alt="Oppenheimer movie poster"
+                            loading="lazy"
+                        >
+                        <span class="rating-badge">★ 8.1</span>
+                    </a>
+                    <div class="movie-info">
+                        <div class="movie-title-row">
+                            <h4>Oppenheimer</h4>
+                            <span class="movie-year">2023</span>
+                        </div>
+                        <p class="movie-meta">Drama · History</p>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <a href="movie.html?id=550" class="poster-link" aria-label="View Fight Club details">
+                        <img
+                            class="movie-poster"
+                            src="https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg"
+                            alt="Fight Club movie poster"
+                            loading="lazy"
+                        >
+                        <span class="rating-badge">★ 8.4</span>
+                    </a>
+                    <div class="movie-info">
+                        <div class="movie-title-row">
+                            <h4>Fight Club</h4>
+                            <span class="movie-year">1999</span>
+                        </div>
+                        <p class="movie-meta">Drama · Thriller</p>
+                    </div>
+                </article>
+
+                <article class="movie-card">
+                    <a href="movie.html?id=693" class="poster-link" aria-label="View The Devil Wears Prada details">
+                        <img
+                            class="movie-poster"
+                            src="https://image.tmdb.org/t/p/w500/8912AsVuS7Sj915apArUFbv6F9L.jpg"
+                            alt="The Devil Wears Prada movie poster"
+                            loading="lazy"
+                        >
+                        <span class="rating-badge">★ 7.0</span>
+                    </a>
+                    <div class="movie-info">
+                        <div class="movie-title-row">
+                            <h4>The Devil Wears Prada</h4>
+                            <span class="movie-year">2006</span>
+                        </div>
+                        <p class="movie-meta">Comedy · Drama</p>
+                    </div>
+                </article>
+            </div>
+
+            <nav class="pagination" id="pagination" aria-label="Movie pages">
+                <button
+                    class="page-button"
+                    id="previous-page"
+                    type="button"
+                    disabled
+                    aria-label="Previous page"
+                >←</button>
+
+                <span class="page-indicator">
+                    Page <strong id="current-page">1</strong>
+                </span>
+
+                <button
+                    class="page-button"
+                    id="next-page"
+                    type="button"
+                    aria-label="Next page"
+                >→</button>
+            </nav>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <a href="index.html" class="brand footer-brand">
+                <span class="brand-icon">M</span>
+                <span>Movie<span class="brand-accent">Explorer</span></span>
+            </a>
+
+            <p>Made for people who love a good story.</p>
+
+            <span class="copyright">© 2026 Movie Explorer</span>
+        </div>
+
+        <div class="container attribution">
+            Movie data and images are provided by TMDB.
+            This project is not endorsed or certified by TMDB.
+        </div>
+    </footer>
+</body>
+</html>
